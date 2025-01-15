@@ -35,6 +35,7 @@ header{
     background-color: #141F2E;
     text-align: center;
     color: white;
+    margin-bottom: 0;
 }
 
 main{
@@ -42,8 +43,10 @@ main{
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.966);
     padding: 10px;
-    margin: auto;
+    margin-top: 0;
+    margin: auto ;
     width: 750px;
+    
 }
 
 footer{
@@ -52,6 +55,10 @@ footer{
     justify-content: space-between;
     align-items: center;
     font: bold 16px serif;
+}
+
+nav{
+    box-shadow: 5px 5px 5px black;
 }
 
 fieldset{
@@ -121,7 +128,9 @@ a:hover{
     text-align: left;
 }
 
-
+#titulo {
+    margin: 0;
+}
 
 /*aqui se divide id e class*/
 
@@ -171,6 +180,10 @@ a:hover{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.subtitulo{
+    margin: 0;
+}
+
 /*aqui se divide class para childrem*/
 
 div > #houver {
@@ -195,7 +208,9 @@ footer > div{
     display: flex;
 }
 
-
+nav > p {
+    text-align: center;
+}
 nav > p > a:active{
     color: red;
 }
@@ -344,4 +359,19 @@ nav > p > a:visited{
     padding: 5px;
     
     margin: 5px;
+}
+
+#sombras{
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px 0px;
+}
+
+#bordas_decorativas{
+    border: 20px solid transparent;
+    padding: 10px;
+    
+    border-image: url(Imagens_em_minhaturas/borda.png) 27 repeat;
+    /*border-image: url(Imagens_em_minhaturas/borda.png);
+    border-image-slice: 27;
+    border-image-repeat: repeat;*/
 }
